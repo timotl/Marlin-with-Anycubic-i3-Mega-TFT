@@ -260,6 +260,7 @@
 #include "duration_t.h"
 #include "types.h"
 #include "gcode.h"
+#include "music.h"
 
 #if HAS_ABL
   #include "vector_3.h"
@@ -14526,6 +14527,7 @@ void setup() {
     fanmux_init();
   #endif
 
+  PowerOnMusic();          
   lcd_init();
 
   #if ENABLED(SHOW_BOOTSCREEN)
