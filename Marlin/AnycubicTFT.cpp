@@ -37,6 +37,7 @@
 #ifdef ANYCUBIC_TFT_MODEL
 #include "AnycubicTFT.h"
 #include "AnycubicSerial.h"
+#include "music.h"
 
 char _conv[8];
 
@@ -102,6 +103,7 @@ void AnycubicTFTClass::Setup() {
   {
     ANYCUBIC_SERIAL_PROTOCOLPGM("J15"); //J15 FILAMENT LACK
     ANYCUBIC_SERIAL_ENTER();
+    FilamentLack();  
 #ifdef ANYCUBIC_TFT_DEBUG
     SERIAL_ECHOLNPGM("TFT Serial Debug: Filament runout... J15");
 #endif
@@ -434,6 +436,7 @@ void AnycubicTFTClass::FilamentRunout()
       {
         ANYCUBIC_SERIAL_PROTOCOLPGM("J15"); //J15 FILAMENT LACK
         ANYCUBIC_SERIAL_ENTER();
+	FilamentLack();
 #ifdef ANYCUBIC_TFT_DEBUG
         SERIAL_ECHOLNPGM("TFT Serial Debug: Filament runout... J15");
 #endif
