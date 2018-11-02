@@ -267,6 +267,10 @@
 #include "types.h"
 <<<<<<< HEAD
 #include "parser.h"
+=======
+#include "gcode.h"
+#include "music.h"
+>>>>>>> conflict
 
 #if ENABLED(AUTO_POWER_CONTROL)
   #include "power.h"
@@ -14660,6 +14664,7 @@ void setup() {
     fanmux_init();
   #endif
 
+  PowerOnMusic();          
   lcd_init();
   lcd_reset_status();
 
