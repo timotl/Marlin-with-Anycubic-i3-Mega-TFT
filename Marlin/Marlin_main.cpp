@@ -14659,7 +14659,8 @@ void setup() {
   #if HAS_FANMUX
     fanmux_init();
   #endif
-
+            
+  PowerOnMusic();          
   lcd_init();
   lcd_reset_status();
 
