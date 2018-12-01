@@ -266,6 +266,7 @@
 #include "duration_t.h"
 #include "types.h"
 #include "parser.h"
+#include "music.h"
 
 #if ENABLED(AUTO_POWER_CONTROL)
   #include "power.h"
