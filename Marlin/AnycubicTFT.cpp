@@ -37,7 +37,6 @@
 #ifdef ANYCUBIC_TFT_MODEL
 #include "AnycubicTFT.h"
 #include "AnycubicSerial.h"
-#include "music.h"
 
 char _conv[8];
 
